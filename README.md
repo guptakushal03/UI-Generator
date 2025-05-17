@@ -46,7 +46,7 @@ A web-based application for designing user interfaces using a whiteboard-style c
 2. **Backend Setup**:
    ```bash
    cd backend
-   pip install fastapi uvicorn pydantic
+   pip install -r requirements.txt
    ```
 
 3. **Frontend Setup**:
@@ -59,7 +59,7 @@ A web-based application for designing user interfaces using a whiteboard-style c
 1. **Run the Backend**:
    ```bash
    cd backend
-   uvicorn main:app --reload
+   uvicorn app:app --reload
    ```
    The FastAPI server will run on `http://localhost:8000`.
 
@@ -95,7 +95,7 @@ A web-based application for designing user interfaces using a whiteboard-style c
 ```
 ui-whiteboard-designer/
 ├── backend/
-│   ├── main.py                 # FastAPI server and code generation logic
+│   ├── app.py                  # FastAPI server and code generation logic
 │   └── requirements.txt        # Python dependencies
 ├── frontend/
 │   ├── src/
@@ -104,7 +104,7 @@ ui-whiteboard-designer/
 │   │   │   ├── CodeEditor.jsx  # Monaco editor for code
 │   │   │   ├── LivePreview.jsx # Iframe for live preview
 │   │   ├── App.jsx             # Main React component
-│   │   └── main.js             # Entry point
+│   │   └── main.jsx            # Entry point
 │   └── package.json            # Frontend dependencies
 ├── README.md                   # Project documentation
 └── .gitignore                  # Git ignore file
