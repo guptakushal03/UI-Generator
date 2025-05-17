@@ -109,3 +109,6 @@ ui-whiteboard-designer/
 ├── README.md                   # Project documentation
 └── .gitignore                  # Git ignore file
 ```
+
+## Contributing
+Contributions are welcome!
